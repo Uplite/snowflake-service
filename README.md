@@ -24,7 +24,12 @@ Code generation is required for both the data access layer as well as the gRPC/P
 
 #### Compilation
 
-Example compilation
+To compile, first generate the required code and run the `make` or `make build` targets.
+
+```sh
+    make generate
+    make build
+```
 
 #### Container
 
@@ -32,7 +37,7 @@ Example container
 
 #### Testing
 
-Example testing
+Unit tests can be run via `make test` which receives an optional `COUNT` variable, defaulting to 1 to bust the test cache between runs. The default is to run the tests with the race detector enabled.
 
 [1]: https://go.dev/
 [2]: https://www.gnu.org/software/make/
